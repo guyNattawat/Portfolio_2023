@@ -841,6 +841,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 :root {
   font-family: 'Poppins', sans-serif;
   background-color: #151515;
@@ -1112,7 +1116,7 @@ section{
   max-width: 400px;
   height: 400px;
   background-color: #1d1d1d;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
   overflow: hidden;
   transition: all 0.35s ease;
@@ -1122,6 +1126,8 @@ section{
 
 .card:hover{
   transform: scale(1.05) translateY(-20px);
+  background-color: #262626;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card .thumbnail{
@@ -1240,6 +1246,29 @@ section{
   color: #696969;
   font-size: 0.8rem;
   font-style: italic;
+}
+
+/*btn*/
+
+.btn-1 {
+  position: sticky;
+  position: -webkit-sticky;
+  /* Safari */
+  bottom: 50px;
+  left: 50px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.btn-1.blue{
+  background-color: #696969;
+  transition: 0.5s;
+}
+
+.btn-1:hover.blue{
+  background-color: #2995fa;
+  transition: 0.5s;
 }
 
 /*responsive*/
