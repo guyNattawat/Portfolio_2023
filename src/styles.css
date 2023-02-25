@@ -32,9 +32,18 @@ html{
 }
 
 .box-contain{
-    background: linear-gradient(0deg, rgb(115, 80, 255) 0%, rgba(41,149,250,1) 50%);
+    background: linear-gradient(0deg, rgb(80, 112, 255) 0%, #2995fa 50%);
     padding: 1px 5px;
     border-radius: 4px;
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.7vw;
+    margin-right: 7px;
+}
+
+.des-box-contain{
+    padding: 1px 5px;
+    border-radius: 2px;
     font-weight: 600;
     color: #fff;
     font-size: 0.7vw;
@@ -152,7 +161,6 @@ section{
 }
 
 #sec-sub-header{
-    background-image: url(/img/work_exp_banner1.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -169,7 +177,7 @@ section{
 }
 
 .text-hl{
-    background: linear-gradient(0deg, rgb(115, 80, 255) 0%, rgba(41,149,250,1) 50%);
+    background: linear-gradient(0deg, rgb(80, 112, 255) 0%, #2995fa 50%);
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -190,7 +198,7 @@ section{
 }
 
 .text-gradient{
-    background: linear-gradient(0deg, rgb(115, 80, 255) 0%, rgba(41,149,250,1) 50%);
+    background: linear-gradient(0deg, rgb(80, 112, 255) 0%, #2995fa 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -356,10 +364,11 @@ section{
     top: 0;
     font-size: 0.8vw;
     font-weight: 600;
+    border-radius: 2px;
 }
 
 .pillar.color1{
-    background-color: #88afc0 !important;
+    background-color: #5a879b !important;
 }
 
 .pillar.color2{
@@ -372,6 +381,22 @@ section{
 
 .pillar.color4{
     background-color: #13005A !important;
+}
+
+.des-color1{
+    background-color: #404258;
+}
+
+.des-color2{
+    background-color: #7895B2;
+}
+
+.des-color3{
+    background-color: #50577A;
+}
+
+.des-color4{
+    background-color: #6B728E;
 }
 
 .pillar {
@@ -514,10 +539,10 @@ section{
 @keyframes highlight-anim {
 	from {
 		width: 0;
-		background: linear-gradient(transparent 45%, rgb(115, 80, 255) 41%, #2995fa 80%, transparent 81%);
+		background: linear-gradient(transparent 45%, rgb(80, 112, 255) 41%, #2995fa 80%, transparent 81%);
 	}
 	to {
 		width: 110%;
-		background: linear-gradient(transparent 45%, rgb(115, 80, 255) 41%, #2995fa 80%, transparent 81%);
+		background: linear-gradient(transparent 45%, rgb(80, 112, 255) 41%, #2995fa 80%, transparent 81%);
 	}
 }

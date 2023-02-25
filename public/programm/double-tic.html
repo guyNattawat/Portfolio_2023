@@ -7,8 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="/public/styles.css">
+    <script src="/public/scripts.js"></script>
     <link rel="icon" type="image/x-icon" href="/img/icon.png">
     <title>WORK EXPERIENCE</title>
 </head>
@@ -64,66 +64,52 @@
         </div>
       </nav>
 
-      <section class="section-banner text-center-hv" id="sec-sub-header" style="background-image: url(/img/work_exp_banner1.png);">
-            <h1 class="text-sz-big " style="color: #2995fa;"><span style="color: #fff;">MY</span> WORK EXPERIENCE</h1> 
-      </section>
+    <section>
         <div class="container-second mx-auto py-7 bg-fade">
-            <div class="grid grid-cols-3 max-[600px]:grid-cols-1 place-items-center">
+            
 
-                <div class="card">
-                    <figure class="thumbnail">
-                        <img src="/img/work-exp-card2.png" class="image-bg">
-                    </figure>
-                    <header class="entry">
-                        <span class="pillar color2">TEACHER ASSISTANT (TA)</span>
-                        <p class="heading">ADVANCED GAME DEVELOPMENT</p>
-                        <div class="meta">
-                            <span>2023 - Present</span>
+                <div id="animation-carousel" class="relative" data-carousel="static">
+                    <!-- Carousel wrapper -->
+                    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                         <!-- Item 1 -->
+                        <div class=" duration-200 ease-linear" data-carousel-item>
+                            <img src="/img/compraph_card1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         </div>
-                    </header>
-                </div>
-
-                <div class="card">
-                    <figure class="thumbnail">
-                        <img src="/img/work-exp-card1.png" class="image-bg">
-                    </figure>
-                    <header class="entry">
-                        <span class="pillar color3">INTERNSHIP PROGRAM</span>
-                        <p class="heading">RINGZERO GAME STUDIO INTERN</p>
-                        <div class="meta">
-                            <span>June - Sep 2022 (4 Months)</span>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-200 ease-linear" data-carousel-item>
+                            <img src="/img/compraph_card1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         </div>
-                    </header>
-                </div>
-
-                <div class="card">
-                    <figure class="thumbnail">
-                        <img src="/img/work-exp-card3.png" class="image-bg">
-                    </figure>
-                    <header class="entry">
-                        <span class="pillar color2">TEACHER ASSISTANT (TA)</span>
-                        <p class="heading">COMPUTER GRAPHIC AND ANIMATION</p>
-                        <div class="meta">
-                            <span>2022 - 2022</span>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-200 ease-linear" data-carousel-item="active">
+                            <img src="/img/compraph_card1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         </div>
-                    </header>
-                </div>
-
-                <div class="card">
-                    <figure class="thumbnail">
-                        <img src="/img/work-exp-card4.png" class="image-bg">
-                    </figure>
-                    <header class="entry">
-                        <span class="pillar color2">TEACHER ASSISTANT (TA)</span>
-                        <p class="heading">PROBLEM SOLVING IN INFORMATION TECHNOLOGY</p>
-                        <div class="meta">
-                            <span>2020 - 2021</span>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-200 ease-linear" data-carousel-item>
+                            <img src="/img/compraph_card1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                         </div>
-                    </header>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-200 ease-linear" data-carousel-item>
+                            <img src="/img/compraph_card1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
                 </div>
-
             </div>
         </div>
+    </section>
+        
           <a href="index.html#sec-third" class="btn-1 blue">
             BACK
           </a>
