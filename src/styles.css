@@ -454,6 +454,10 @@ section{
     transition: 0.5s;
 }
 
+.slider-box{
+    height: 28rem;
+}
+
 /*responsive*/
 @media (max-width: 1980px){
     .container-first {
@@ -466,6 +470,9 @@ section{
 
     .container-second{
         max-width: 1400px;
+    }
+    .sub-work-header{
+        margin-bottom: 5px;
     }
 }
 
@@ -485,6 +492,9 @@ section{
         width: 300px;
         max-width: 300px;
         height: 300px;
+    }
+    .slider-box{
+        height: 20rem;
     }
 }
 
@@ -509,6 +519,10 @@ section{
         max-width: 300px;
         height: 300px;
     }
+    .slider-box{
+        height: 14rem;
+    }
+    
 }
 
 /*animation*/
