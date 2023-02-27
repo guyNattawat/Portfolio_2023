@@ -197,6 +197,12 @@ section{
     font-weight: 600;
 }
 
+.text-sz-nr2{
+    font-size: 4.5vw;
+    line-height: 5rem;
+    font-weight: 600;
+}
+
 .text-gradient{
     background: linear-gradient(0deg, rgb(80, 112, 255) 0%, #2995fa 50%);
   -webkit-background-clip: text;
@@ -229,7 +235,27 @@ section{
 	transition: 1s;
 }
 
+.txt-highlight-2 {
+	position: relative;
+	background: transparent;
+	/*padding-left: 5px;*/
+	transition: 1s;
+}
+
 .txt-highlight-3::after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	animation: highlight-anim2 1s;
+	animation-fill-mode: forwards;
+}
+
+.txt-highlight-2::after {
 	content: "";
 	display: inline-block;
 	position: absolute;
@@ -458,6 +484,14 @@ section{
     height: 28rem;
 }
 
+.slider-container{
+    width: 45rem;
+}
+
+.poster-container{
+    display: block;
+}
+
 /*responsive*/
 @media (max-width: 1980px){
     .container-first {
@@ -473,6 +507,9 @@ section{
     }
     .sub-work-header{
         margin-bottom: 5px;
+    }
+    .poster-img{
+        height: 24.5rem;
     }
 }
 
@@ -495,6 +532,13 @@ section{
     }
     .slider-box{
         height: 20rem;
+    }
+    .slider-container{
+        padding: 1rem 0;
+        width: 35rem;
+    }
+    .poster-img{
+        height: 19rem;
     }
 }
 
@@ -521,6 +565,17 @@ section{
     }
     .slider-box{
         height: 14rem;
+    }
+    .slider-container{
+        padding: 0;
+        width: 20rem;
+    }
+    .poster-container{
+        display: none !important;
+    }
+    .text-sz-nr2{
+        font-size: 6vw;
+        line-height: 1rem;
     }
     
 }
@@ -558,5 +613,16 @@ section{
 	to {
 		width: 110%;
 		background: linear-gradient(transparent 45%, rgb(80, 112, 255) 41%, #2995fa 80%, transparent 81%);
+	}
+}
+
+@keyframes highlight-anim2 {
+	from {
+		width: 0;
+		background: linear-gradient(transparent 45%, #2995fa 41%, #2995fa 80%, transparent 81%);
+	}
+	to {
+		width: 100%;
+		background: linear-gradient(transparent 45%, #2995fa 41%, #2995fa 80%, transparent 81%);
 	}
 }

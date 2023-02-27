@@ -67,59 +67,67 @@
     <section>
         <div class="container-second mx-auto py-7 bg-fade">
           <div class="text-center" style="width: 100%;">
-            <h1 class="text-hl text-sz-nr sub-work-header">DOUBLE TIC TAC TOE</h1>
+            <h1 class="sub-work-header text-sz-nr2" style="color: #fff;"><span class="txt-highlight-3">DOUBLE TIC TAC TOE</span></h1>
           </div>
-            <div class="grid grid-cols-2 max-[600px]:grid-cols-1 max-[600px]:px-5">
-              <div id="animation-carousel" class="relative" data-carousel="static">
-                <!-- Carousel wrapper -->
-                <div class="relative slider-box overflow-hidden rounded-sm">
-                     <!-- Item 1 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: block;">
-                        <img src="/img/webdev/tictactoe-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 2 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
-                        <img src="/img/webdev/tictactoe-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 3 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
-                        <img src="/img/webdev/tictactoe-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 4 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
-                        <img src="/img/webdev/tictactoe-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 5 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
-                        <img src="/img/webdev/tictactoe-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 6 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
-                      <img src="/img/webdev/tictactoe-6.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                    <!-- Item 7 -->
-                    <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
-                      <img src="/img/webdev/tictactoe-7.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                    </div>
-                </div>
-                <!-- Slider controls -->
-                <button onclick="showSlides(-1)" type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
-                        <span class="sr-only">Previous</span>
-                    </span>
-                </button>
-                <button onclick="showSlides(1)" type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-                    <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
-                        <span class="sr-only">Next</span>
-                    </span>
-                </button>
+          <div class="flex">
+            <div class="flex-auto poster-container" style="display: flex; justify-content: right; align-items: center;">
+              <img src="/img/posters/tictac-poster.png" class="poster-img" alt="">
             </div>
+            <div class="flex-auto" style="display: flex; justify-content: left;">
+              <div class="ml-3 slider-container">
+                <div id="animation-carousel" class="relative" data-carousel="static">
+                  <!-- Carousel wrapper -->
+                  <div class="relative slider-box overflow-hidden rounded-sm">
+                       <!-- Item 1 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: block;">
+                          <img src="/img/webdev/tictactoe-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 2 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
+                          <img src="/img/webdev/tictactoe-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 3 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
+                          <img src="/img/webdev/tictactoe-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 4 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
+                          <img src="/img/webdev/tictactoe-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 5 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
+                          <img src="/img/webdev/tictactoe-5.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 6 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
+                        <img src="/img/webdev/tictactoe-6.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                      <!-- Item 7 -->
+                      <div id="slideShow" class="duration-200 ease-linear" style="display: none;">
+                        <img src="/img/webdev/tictactoe-7.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                      </div>
+                  </div>
+                  <!-- Slider controls -->
+                  <button onclick="showSlides(-1)" type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                          <span class="sr-only">Previous</span>
+                      </span>
+                  </button>
+                  <button onclick="showSlides(1)" type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                      <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                          <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                          <span class="sr-only">Next</span>
+                      </span>
+                  </button>
+              </div>
+            </div>
+            </div>
+            
         </div>
     </section>
         
-          <a href="index.html#sec-third" class="btn-1 blue">
+          <a href="/public/programm.html" class="btn-1 blue">
             BACK
           </a>
         <footer class="text-center text-white bg-neutral-800">
