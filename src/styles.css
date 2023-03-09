@@ -61,10 +61,13 @@ html{
     height: 15vh;
     margin-top: 50px;
     transition: 0.5s;
+    box-shadow: 0 10px 5px #131313;
+    border-radius: 2px;
 }
 
 .menu-header-box:hover{
     transform: scale(1.01);
+    box-shadow: 0 10px 10px #131313;
     transition: 0.5s;
 }
 
@@ -131,6 +134,45 @@ html{
     color: #fff;
 }
 
+.work-img{
+    width: 100%;
+    margin-bottom: 10px;    
+}
+
+.side-bar{
+    display: block;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    width: 33vw;
+    background-color: #0f0f0f;
+    padding: 2.5rem;
+}
+
+.visit-btn{
+    color: #fff;
+    background-color: #1C82AD;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 1.2vw;
+    font-family: 'Train One', cursive;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.visit-btn:hover{
+    color: #1C82AD;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.software-icon{
+    width: 40px; 
+    border-radius: 3px; 
+    margin: 6px; 
+    margin-left: 0px; 
+    margin-top: 3px;
+}
 
 /*section*/
 section{
@@ -165,6 +207,20 @@ section{
     background-repeat: no-repeat;
     background-position: bottom;
     width: 100%;
+}
+
+.back-icon{
+    cursor: pointer;
+    font-size:15px !important;
+    color:#fff;
+    background-color: #1C82AD;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.sidebar-mob-des{
+    padding: 20px;
+    display: none;
 }
 
 /*text*/
@@ -266,6 +322,29 @@ section{
 	left: 0;
 	animation: highlight-anim 1s;
 	animation-fill-mode: forwards;
+}
+
+.text-des-header{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+
+.icon{
+    font-size: 1.2vw;
+}
+
+.text-des{
+    font-size: 1vw;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif !important; 
+}
+
+.text-des-sm{
+    font-size: 0.8vw;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif !important; 
 }
 
 .info{
@@ -425,6 +504,14 @@ section{
     background-color: #6B728E;
 }
 
+.des-color5{
+    background-color: #5a879b;
+}
+
+.side-bar .des-box-contain{
+    margin: 1px;
+}
+
 .pillar {
     display: inline-table;
     width: -moz-max-content;
@@ -459,6 +546,17 @@ section{
     font-style: italic;
 }
 
+.footer-des{
+    font-size: 0.7vw;
+}
+
+.text-caution{
+    font-style: italic;
+    color: rgb(196, 0, 0);
+    font-size: 0.7vw;
+    font-weight: 200;
+}
+
 /*btn*/
 .btn-1 {
     position: sticky;
@@ -490,6 +588,10 @@ section{
 
 .poster-container{
     display: block;
+}
+
+.mb-profile-box{
+    display: none;
 }
 
 /*responsive*/
@@ -540,6 +642,20 @@ section{
     .poster-img{
         height: 19rem;
     }
+    .des-box-contain{
+        margin: 0 !important;
+    }
+    .software-icon{
+        width: 35px;
+        margin: 3px;
+        margin-left: 0;
+    }
+    .mob-des-contain{
+        margin-right: 5px !important;
+    }
+    .meta{
+        font-size: 0.8vw !important;
+    }
 }
 
 @media (max-width: 500px){
@@ -577,7 +693,101 @@ section{
         font-size: 6vw;
         line-height: 1rem;
     }
-    
+    .side-bar{
+        display: none;
+    }
+    .text-des-header{
+        font-size: 5vw;
+    }
+    .icon, .text-des{
+        font-size: 3vw;
+    }
+    .text-des-sm{
+        font-size: 2.5vw;
+    }
+    .des-box-contain{
+        font-size: 2vw;
+        margin-right: 0;
+    }
+    .visit-btn{
+        font-size: 3vw;
+    }
+    .sidebar-mob-des{
+        display: block;
+    }
+    .software-icon{
+        width: 30px;
+        margin-left: 0;
+        margin-right: 4px;
+    }
+    .meta{
+        font-size: 2.5vw !important;
+    }
+    .back-btn{
+        display: none;
+    }
+    .card .pillar{
+        font-size: 2.5vw;
+    }
+    .card .heading{
+        font-size: 3.5vw;
+    }
+    .mob-des-contain{
+        margin-right: 4px !important;
+    }
+    .footer-des{
+        font-size: 2.5vw !important;
+    }
+    .text-caution{
+        font-size: 2vw !important;
+    }
+    .profile-box{
+        display: none !important;
+    }
+    .profile_pic{
+        margin-top: 20px;
+        box-shadow: -2px -2px #2995fa;
+        width: 35vw !important;
+    }
+    .mb-profile-box{
+        display: flex !important;
+    }
+    .header-1{
+        font-size: 3vw;
+    }
+    .info{
+        font-size: 2.5vw;
+    }
+    .info-fade{
+        font-size: 2vw;
+    }
+    .info-sm{
+        font-size: 2.1vw;
+    }
+    .box-contain{
+        font-size: 2vw;
+        border-radius: 2px !important;
+    }
+    #aboutme{
+        height: 110vh;
+    }
+    .menu-header-container h1{
+        font-size: 4vw;
+    }
+    .menu-header-box{
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        height: 20vh;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    #sec-third{
+        padding: 10px 10px;
+    }
+    .menu-header-container{
+        padding-left: 20px;
+    }
 }
 
 /*animation*/
