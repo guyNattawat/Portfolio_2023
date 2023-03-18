@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(114, 114, 114);
+    outline: 1px solid rgb(114, 114, 114);
+  }
+
 html{
     scroll-behavior: smooth;
 }
@@ -79,42 +92,42 @@ html{
 
 
 .menu-header-1{
-    background-image: url("/img/workexpborderBW.png");
+    background-image: url("/img/workexpborderBW.jpg");
     background-size: cover;
 }
 
 .menu-header-1:hover{
-    background-image: url("/img/workexpborderColor.png");
+    background-image: url("/img/workexpborderColor.jpg");
     background-size: cover;
 }
 
-.menu-header-2{
-    background-image: url("/img/TAborderBW.png");
+.menu-header-2{ 
+    background-image: url("/img/TAborderBW.jpg");
     background-size: cover;
 }
 
 .menu-header-2:hover{
-    background-image: url("/img/TAborderColor.png");
+    background-image: url("/img/TAborderColor.jpg");
     background-size: cover; 
 }
 
 .menu-header-3{
-    background-image: url("/img/skillBW.png");
+    background-image: url("/img/skillBW.jpg");
     background-size: cover;
 }
 
 .menu-header-3:hover{
-    background-image: url("/img/skillColor.png");
+    background-image: url("/img/skillColor.jpg");
     background-size: cover; 
 }
 
 .menu-header-4{
-    background-image: url("/img/additionalActivitiesBW.png");
+    background-image: url("/img/additionalActivitiesBW.jpg");
     background-size: cover;
 }
 
 .menu-header-4:hover{
-    background-image: url("/img/additionalActivitiesColor.png");
+    background-image: url("/img/additionalActivitiesColor.jpg");
     background-size: cover; 
 }
 
@@ -165,6 +178,37 @@ html{
     background-color: #fff;
     transition: 0.3s;
 }
+
+.download-btn{
+    font-family: 'Barlow Semi Condensed', sans-serif !important;
+    font-weight: 600;
+    color: #fff;
+    font-size: 0.75vw;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.download-btn:hover{
+    color: #b91e1e;
+}
+
+.youtube-btn{
+    color: #fff;
+    background-color: #c51313;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 1.2vw;
+    font-family: 'Train One', cursive;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.youtube-btn:hover{
+    color: #c51313;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
 
 .software-icon{
     width: 40px; 
@@ -221,6 +265,46 @@ section{
 .sidebar-mob-des{
     padding: 20px;
     display: none;
+}
+
+.block-border{
+    border-radius: 3px;
+    border: 1px solid #fff;
+    padding: 20px;
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    margin: 20px;
+}
+
+.block-border .header{
+    border-radius: 5px;
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.block-border .sub-header{
+    font-size: 0.8vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.block-border .time{
+    font-size: 0.8vw;
+    font-weight: 600;
+    color: #555555;
+    font-style: italic;
+}
+
+.block-border .description{
+    font-size: 0.7vw;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Barlow Semi Condensed', sans-serif !important;
+
 }
 
 /*text*/
@@ -566,6 +650,7 @@ section{
     padding: 10px 20px;
     border-radius: 3px;
     color: #fff;
+    cursor: pointer;
 }
 
 .btn-1.blue{
@@ -712,6 +797,9 @@ section{
     .visit-btn{
         font-size: 3vw;
     }
+    .youtube-btn{
+        font-size: 3vw;
+    }
     .sidebar-mob-des{
         display: block;
     }
@@ -787,6 +875,9 @@ section{
     }
     .menu-header-container{
         padding-left: 20px;
+    }
+    .download-btn{
+        font-size: 3vw;
     }
 }
 
