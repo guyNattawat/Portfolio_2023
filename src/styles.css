@@ -147,9 +147,22 @@ html{
     color: #fff;
 }
 
+.container.project h1{
+    font-size: 3.5vw;
+    color: #fff;
+    font-weight: 600;
+}
+
 .work-img{
     width: 100%;
     margin-bottom: 10px;    
+}
+
+.icon_work{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translateX(320px) translateY(-12px);
 }
 
 .side-bar{
@@ -466,6 +479,25 @@ section{
     align-items: center;
 }
 
+.header-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 3vw;
+    margin: 20px 0px 20px 0px;
+}
+
+.sm-header-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #535353;
+    font-size: 1vw;
+    font-style: italic;
+    margin: 15px 0px 15px 0px;
+}
+
 /*Card*/
 .card{
     display: flex;
@@ -698,6 +730,11 @@ section{
     .poster-img{
         height: 24.5rem;
     }
+    .work-vdo{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 10px;
+    }
 }
 
 @media (max-width: 1280px){
@@ -740,6 +777,11 @@ section{
     }
     .meta{
         font-size: 0.8vw !important;
+    }
+    .work-vdo{
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 10px;
     }
 }
 
@@ -878,6 +920,40 @@ section{
     }
     .download-btn{
         font-size: 3vw;
+    }
+    .block-border{
+        width: 300px;
+        max-width: 300px;
+        height: 360px;
+    }
+    .block-border .header{
+        font-size: 3.5vw;
+    }
+    .block-border .sub-header{
+        font-size: 3vw;
+    }
+    .block-border .time{
+        font-size: 3vw;
+    }
+    .block-border .description{
+        font-size: 2.7vw;
+    }
+    .icon_work{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        transform: translateX(230px) translateY(-12px);
+    }
+    .work-vdo{
+        width: 100%;
+        height: 30vh;
+        margin-bottom: 10px;
+    }
+    .header-inner{
+        font-size: 5vw;
+    }
+    .sm-header-inner{
+        font-size: 2vw;
     }
 }
 
