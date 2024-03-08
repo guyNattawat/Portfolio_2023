@@ -3285,6 +3285,19 @@ section{
     height: 80vh;
     margin-bottom: 10px;
   }
+
+  .block-border{
+    width: 300px;
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .icon_work{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    transform: translateX(240px) translateY(-12px);
+  }
 }
 
 @media (max-width: 500px){
